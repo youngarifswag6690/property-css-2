@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Proprty</title>
+	</head>
+	<style type="text/css">
+		.tooltip{
+			position: relative;
+			display: inline-block;
+			border-bottom: 1px dotted black;
+		}.tooltiptext{
+			visibility: hidden;
+			width: 120px;
+			background-color: black;
+			color: white;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px;
+			position: absolute;
+			z-index: 1;
+			top: 150%;
+			left: 50%;
+			margin-left: -60px; 
+		}.tooltip:hover .tooltiptext{
+			visibility: visible;
+		}
+	</style>
+
+	<body style="text-align: center;">
+		<h2>tooltiptext yang muncul dibawah</h2>
+		<div class="tooltip">arahkan kursor mouse ke sini <span class="tooltiptext">ini adalah tooltip text yang muncul dibawah, sebagai keterangan ekxtra</span></div>
+
+	</body>
+</html>

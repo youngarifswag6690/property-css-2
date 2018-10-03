@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Layout</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body{
+			margin: 0;
+		}
+		/* Style untuk header */
+		.header{
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+		.navigation{
+			overflow: hidden;
+			background-color: #03A9F4;
+		}
+		/* Style links di navigation*/
+		.navigation a{
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration:none;
+		}
+		/*Perubahan warna saat hover*/
+		.navigation a:hover{
+			background-color: #ddd;
+			color: black;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		/*Tiga Kolom float yang panjang ke bawahnya tidak sama*/
+		.aside, .article{
+			float: left;
+			padding: 10px;
+		}
+		/*kolom pertama dan ketiga*/
+		.aside{
+			width: 25%;
+		}
+		.article{
+			width: 50%
+		}
+		/*Responsive layout kolom di contair menjadi baris*/
+		@media(max-width: 600px;){
+			.aside, .article{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Header</h1>
+	</div>
+	<div class="navigation">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	</div>
+	<div class="container">
+		<div class="aside">
+			<h2>Side</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+		</div>
+		<div class="article">
+			<h2>Main Content</h2>
+			<p>ahkajhdknuiwahdkjahdusndnahdahdkajhuwhkjdawhduiahdkjhakjhduhwkhadjhwiudhuadkjwahduhwdkakhdhwuhdukwhudahwu.</p>
+			<p>akiuakljdalkwjoidjkandnwhdlakwjdowajdlajdwjdawdu</p>
+		</div>
+		<div class="asidea">
+			<h2>Side</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+		</div>
+	</div>
+
+</body>
+</html>
